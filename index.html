@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>ನನ್ನ ಬಾಳಿನ ದೀಪ ಮತ್ತು ನಕ್ಷತ್ರ | Happy Deepavali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <svg class="toran" id="toran" aria-hidden="true"></svg>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <main>
+        <header class="hero">
+            <h1>Happy Deepavali</h1>
+            <p class="sub">ನನ್ನ ಬಾಳಿನ ದೀಪ ಮತ್ತು ನಕ್ಷತ್ರಕ್ಕೆ</p>
+            <p class="sub-en">To the lamp and the star of my life</p>
+        </header>
+
+        <section class="lamps">
+            <svg class="rangoli" id="rangoli" viewBox="-200 -200 400 400" aria-hidden="true"></svg>
+
+            <div class="station" data-who="madhu">
+                <div class="arch"><img src="images/madhu.jpg" alt="Madhu"></div>
+                <button class="diya" aria-label="Light Madhu's lamp">
+                    <span class="glow"></span>
+                    <span class="flame"></span>
+                    <span class="wick"></span>
+                    <span class="bowl"></span>
+                </button>
+                <p class="name">Madhu</p>
+                <div class="msg">
+                    <p class="kn">ಸೋತಾಗ ನನ್ನ ಕೈ ಹಿಡಿದ ಬೆಳಕು ನೀವು 🪔</p>
+                    <p class="en">When I was down, you were the light that held my hand.</p>
+                </div>
+            </div>
+
+            <div class="station" data-who="meghana">
+                <div class="arch"><img src="images/meghana.jpg" alt="Meghana"></div>
+                <button class="diya" aria-label="Light Meghana's lamp">
+                    <span class="glow"></span>
+                    <span class="flame"></span>
+                    <span class="wick"></span>
+                    <span class="bowl"></span>
+                </button>
+                <p class="name">Meghana</p>
+                <div class="msg">
+                    <p class="kn">ಮುದ್ದು ಮಗಳೇ, ಪುಟ್ಟ ನಕ್ಷತ್ರ ನೀನು ✨</p>
+                    <p class="en">My dear daughter, you are my little star.</p>
+                </div>
+            </div>
+        </section>
+
+        <p class="hint" id="hint">ದೀಪ ಹಚ್ಚಲು ಮುಟ್ಟಿ<span>Touch a lamp to light it</span></p>
+
+        <section class="finale" id="finale" aria-live="polite">
+            <div class="family"><img src="images/together.jpg" alt="Madhu and Meghana together"></div>
+            <h2>Love you a lot 💗</h2>
+            <p class="wish">ದೀಪಾವಳಿ ಹಬ್ಬದ ಹಾರ್ದಿಕ ಶುಭಾಶಯಗಳು</p>
+            <p class="sign">ಪ್ರೀತಿಯಿಂದ<span>— Ram</span></p>
+        </section>
+    </main>
+
+    <canvas id="fireworks" aria-hidden="true"></canvas>
+
+    <div id="copy"><p>— Ram</p></div>
+    <audio id="song" src="audio/song.mp3" loop preload="auto"></audio>
+    <button id="muteBtn" aria-label="Mute or unmute music">🔊</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
