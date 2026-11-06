@@ -126,14 +126,14 @@
             burst(r.left + r.width / 2, r.top);
         }
         var allLit = stations.every(function (s) { return s.classList.contains("lit"); });
-        if (allLit) celebrate(); else scheduleAuto(6000);
+        if (allLit) celebrate(); else scheduleAuto(2600);
     }
 
     function celebrate() {
         if (finished) return;
         finished = true;
         clearTimeout(autoTimer);
-        hint.classList.add("done");
+        if (hint) hint.classList.add("done");
         setTimeout(function () {
             finale.classList.add("show");
             setTimeout(function () {
@@ -151,7 +151,7 @@
         }, 450);
     }
 
-    /* if nobody touches the lamps, they light by themselves so the whole greeting is seen */
+    /* the lamps light by themselves one after the other as soon as the page opens */
     function scheduleAuto(delay) {
         clearTimeout(autoTimer);
         autoTimer = setTimeout(function () {
@@ -164,7 +164,7 @@
         st.querySelector(".diya").addEventListener("click", function () { light(st); });
         st.querySelector(".arch").addEventListener("click", function () { light(st); });
     });
-    scheduleAuto(8000);
+    scheduleAuto(1500);
 
     /* ---------- background song ---------- */
     var song = document.getElementById("song"), muteBtn = document.getElementById("muteBtn");
